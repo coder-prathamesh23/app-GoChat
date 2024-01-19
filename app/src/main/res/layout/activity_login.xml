@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/IVApp_Logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:background="@drawable/edt_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="13dp"
+        android:layout_below="@+id/IVApp_Logo"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <EditText
+        android:id="@+id/ETPassword"
+        android:background="@drawable/edt_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="13dp"
+        android:layout_below="@+id/ETEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETPassword"
+        android:text="LOG IN"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="150dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
